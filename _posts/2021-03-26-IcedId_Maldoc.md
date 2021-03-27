@@ -11,9 +11,9 @@ I always like to look inside the doc for any images. This helps me understand th
 ![18cad07a4fe5e160b924fb4818e3380e.png](../_posts/_resources/d9526c32abc848b597e66e2615191886.png)
 
 
-Malicious Word documents typically do one of three techniques to do evil:
+Malicious Word documents typically do one of three things:
 
-1. Macros
+1. Execute macros
 2. Link to a URL containing the malicious payload
 3. Exploit Word itself, usually [CVE–2017–11882](https://blog.morphisec.com/microsoft-equation-editor-backdoor) 
 
