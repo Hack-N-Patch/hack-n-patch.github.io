@@ -108,9 +108,7 @@ This HTA file will retrieve the remote file named `collectionMemory.jpg` and att
 However, @reecDeep on [Twitter](https://twitter.com/reecdeep/status/1375385369462575106) reported a ***similar*** sample from a few days prior and the follow on payload was uploaded to [tria.ge](https://tria.ge/210326-g3jcevvnd6).
 
 
-IOCs
-
-Type|Value
+IOC Type|Value
 ---|------
 filename|ingresso.03.26.21.doc
 filename|c:\users\public\collectionMemory.jpg
