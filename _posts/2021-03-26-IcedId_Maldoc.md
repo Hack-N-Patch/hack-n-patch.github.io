@@ -13,7 +13,7 @@ If you don't have a copy of Office available, it's still easy to analyze with [O
 I always like to look inside the doc for any images. This helps me understand the lures used. CyberChef has a recipe to "Extract Files". You can use this to easily preview images. In this case, the image alone makes this *highly suspicious*. This is the traditional "This document was created in an earlier version of Word" lure.  
 
 
-![18cad07a4fe5e160b924fb4818e3380e.png](/_posts/_resources/d9526c32abc848b597e66e2615191886.png)
+![18cad07a4fe5e160b924fb4818e3380e.png](../_posts/_resources/d9526c32abc848b597e66e2615191886.png)
 
 
 Malicious Word documents typically do one of three things:
@@ -39,19 +39,19 @@ I take a once over for the full macro, then focus in on one component I find mos
 
 
 
-![6f9193d37b7041b3fb47c3b8ab145ed1.png](/_posts/_resources/c5cb9f692a3040908c3e1e3840d87c3d.png)
+![6f9193d37b7041b3fb47c3b8ab145ed1.png](/_resources/c5cb9f692a3040908c3e1e3840d87c3d.png)
 
 
 
 What we can see here is that a `wscript.shell` object is stored in a variable called `documentViewTitle`. The `exec` [function](https://www.vbsedit.com/html/5593b353-ef4b-4c99-8ae1-f963bac48929.asp) of this object is then called with the arguments pulled from `ptrMem` and `WExceptionLink`, after using the `Replace()` function to remove the 1s used to obfuscate the code. Looking at these variables, they seem to source from some form object contained in the document. If we use the `oledump` tool, we can see this object.
 
 
-![9bd3219588cd7345cb28fb79958f8631.png](/_posts/_resources/249176739ae042389500f2e49ed828bf.png)
+![9bd3219588cd7345cb28fb79958f8631.png](./_resources/249176739ae042389500f2e49ed828bf.png)
 
 If we select the appropriate streams, we see the command `c:\windows\explorer.exe c:\users\public\main.hta` come to light.
 
 
-![a6898a7ea7b51b7543256fd913b14ecb.png](/_posts/_resources/7a0d96156ed2434ab552b1bde522c5a9.png)
+![a6898a7ea7b51b7543256fd913b14ecb.png](../_resources/7a0d96156ed2434ab552b1bde522c5a9.png)
 
 Thinking back to our triage of the sample, this HTA file is likely the file that's created by the macro. Zeroing in on that code...
 
