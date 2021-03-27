@@ -1,1 +1,9 @@
+title: Hack N Patch
+email: hacknpatch@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Like Toys R Us, but... different?
+twitter_username: hackpatch
+
+# Build Settings
+markdown: kramdown
 theme: jekyll-theme-slate
