@@ -13,7 +13,7 @@ If you don't have a copy of Office available, it's still easy to analyze with [O
 I always like to look inside the doc for any images. This helps me understand the lures used. CyberChef has a recipe to "Extract Files". You can use this to easily preview images. In this case, the image alone makes this *highly suspicious*. This is the traditional "This document was created in an earlier version of Word" lure.  
 
 
-![18cad07a4fe5e160b924fb4818e3380e.png](/resources/d9526c32abc848b597e66e2615191886.png)
+![18cad07a4fe5e160b924fb4818e3380e.png](../resources/d9526c32abc848b597e66e2615191886.png)
 
 
 Malicious Word documents typically do one of three things:
@@ -24,7 +24,7 @@ Malicious Word documents typically do one of three things:
 
 Running `olevba -a ingresso.03.26.21.doc` performs triage analysis on the macro and highlights suspicious items. 
 
-![648a2336d5d74ff831b7b742e17dd3b8.png](/_resources/5f24a20247d84cf7948244b0d9b71c69.png)
+![648a2336d5d74ff831b7b742e17dd3b8.png](/_posts/resources/5f24a20247d84cf7948244b0d9b71c69.png)
 
 There are several things that stand out here that will guide our analysis. The macro:
 
