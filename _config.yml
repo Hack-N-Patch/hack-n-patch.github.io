@@ -6,4 +6,4 @@ twitter_username: hackpatch
 
 # Build Settings
 markdown: kramdown
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
