@@ -1,3 +1,8 @@
+---
+layout: post
+title:  "IcedId Maldoc"
+---
+
 Browsing through [AnyRun](https://app.any.run/tasks/3f121e8d-95d6-4c9f-90e2-bb57a4ddf697/), I found an interesting sample. 
 
 
