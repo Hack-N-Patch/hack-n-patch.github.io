@@ -1,4 +1,4 @@
-## Hack N Patch
+## Welcome to the blog
 
 <ul>
   {% for post in site.posts %}
