@@ -123,8 +123,6 @@ Type|Value
 ----|-----
 `client.exe`| 4336ba1f6f94127f3610a809151dcf5f
 `client.exe` | 2efad23e5eb0e9a7ba2cbe0cc79d97e242047ec89baefe08568c447d17fe8bb1
-`aspnet_regbrowsers.exe` |
-`aspnet_regbrowsers.exe` |
 URL | `https://ia801503.us.archive.org/18/items/cmd_20210302/CMD.TXT`
 URL | `https://ia801508.us.archive.org/11/items/server_20210419_0848/Server.txt`
 URL | `https://ia601508.us.archive.org/15/items/all_20210419_20210419/ALL.txt`
