@@ -142,7 +142,7 @@ rule HCrypt {
 		description = "Rule to detect HCrypt crypter"
 		author = "@hackpatch"
 		date = 05112021
-		url = ""
+		url = "https://www.hacknpatch.com/2021/05/11/HCryptCryptor.html"
 
 	strings:
 		$mz = {4d 5a}
