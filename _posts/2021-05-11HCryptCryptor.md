@@ -103,11 +103,11 @@ Quickly skimming, we can see dynamic imports for process injection.
 
 Unfortunately for us, the decompiled source is still highly obfuscated. We already have a good idea of this binary's functionality based on the arguments passed, dynamic imports, and that the character codes translate into a binary. We can skip analyzing the rest of this binary for the time being, and circle back at a later if needed.
 
-Tossing `malware2.exe` into pestudio, it appears to be UPX packed. Another automated tool, Detect It Easy, agrees and identifies version 3.96. You can get the official unpacker for UPX on [GitHub](https://github.com/upx/upx/releases). A good overview of what UPX does, and how to unpack it manually if you ever need to, is available [here](https://malware.news/t/the-basics-of-packed-malware-manually-unpacking-upx-executables/35961).
+Tossing `malware2.exe` into pestudio, it appears to be UPX packed. Typically this is easy to detect, as the secion names will all contain UPX. Another automated tool, Detect It Easy, agrees and identifies version 3.96. You can get the official unpacker for UPX on [GitHub](https://github.com/upx/upx/releases). For a good overview of what UPX does and how to unpack it manually is available [here](https://malware.news/t/the-basics-of-packed-malware-manually-unpacking-upx-executables/35961).
 
 **NOTE: Always make a backup of the packed malware before running an unpacking tool. The UPX unpacker will overwrite the file.**
 
-Running the unpacker is very easy - `upx.exe -d malware2-unpacked.exe`.
+Running the unpacker is easy - `upx.exe -d malware2-unpacked.exe`.
 
 
 ![95f8293eaee4ff6d7ddf4568303e55fc.png](/images/10fdd76036b54ecfa623fc5a8c80fc84.png)
@@ -115,7 +115,7 @@ Running the unpacker is very easy - `upx.exe -d malware2-unpacked.exe`.
 
 Pestudio recognizes the unpacked binary as valid, and gives us lots of context with libraries, imports, strings, etc -this is our final adversary payload. Which, according to [Joe Sandbox](https://www.joesandbox.com/analysis/408523/0/html) is BitRAT Xmrig.
 
-This cryptor behvario overlaps significantly with [Morphisec's](https://blog.morphisec.com/tracking-hcrypt-an-active-crypter-as-a-service) reporting, calling it HCrypt.
+This cryptor behvaior overlaps significantly with [Morphisec's reporting](https://blog.morphisec.com/tracking-hcrypt-an-active-crypter-as-a-service), labeling it HCrypt.
 
 Related IOCs
 
