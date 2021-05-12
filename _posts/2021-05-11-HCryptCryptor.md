@@ -135,7 +135,7 @@ Registry Modification | `HKCU\Software\Classes\CLSID\{fdb00e52-a214-4aa1-8fba-43
 Regsistry Modification | `HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`
 Registry Modification |  `HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders`
 
-YARA for Initial HCrypt Loader
+YARA for Initial HCrypt Crypter
 ```
 rule HCrypt {
 	meta:
