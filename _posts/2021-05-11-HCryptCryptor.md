@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "HCrypt Cryptor"
+title:  "HCrypt Crypter"
 ---
 
 Kicking off today's analysis with a sample called `client.exe` on [VirusTotal](https://www.virustotal.com/gui/file/2efad23e5eb0e9a7ba2cbe0cc79d97e242047ec89baefe08568c447d17fe8bb1/detection) ([Malware Bazaar download link](https://bazaar.abuse.ch/sample/2efad23e5eb0e9a7ba2cbe0cc79d97e242047ec89baefe08568c447d17fe8bb1/#intel)). As of this writing, it has 22/70 vendors flagging it. Let's see why.
