@@ -184,7 +184,7 @@ rule VashSorena {
 		description = "Rule to detect VashSorena Ransomware"
 		author = "@hackpatch"
 		date = 05172021
-		url = "https://www.hacknpatch.com/2021/05/17/VashSorenaRansomware.html"
+		url = "https://www.hacknpatch.com/2021/05/16/VashSorenaRansomware.html"
 
 	strings:
 		$mz = {4d 5a}
