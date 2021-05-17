@@ -52,9 +52,9 @@ By highlighting this variable, right clicking and changing the data type to char
 `main_KillProcess_4D7420`
 This function runs a shell command `taskkill /F /IM ` attempting to kill the processes:
 
-- sqlceip.exe
-- sqlwriter.exe
-- Spoof.uxe.tmp
+- `sqlceip.exe`
+- `sqlwriter.exe`
+- `Spoof.uxe.tmp`
 
 `main_delExploit_4D75A0`
 This function attempts to clean up several files (presumably, based on function name and location in the program) used to gain access:
@@ -72,11 +72,11 @@ Calls `attrib +h +s Encrypt.exe`, making the `Encrypt.exe` executable labeled as
 
 Then, the function proceeds to use `net stop` to stop a variety of running services:
 
-- MSSQL$SQLEXPRESS
-- MSSQLSERVER
-- SQLSERVERAGENT
-- mysql
-- plesksrv
+- `MSSQL$SQLEXPRESS`
+- `MSSQLSERVER`
+- `SQLSERVERAGENT`
+- `mysql`
+- `plesksrv`
 
 Nested inside this function is a call to `main_getdrives_4D7F70` that loops through the alphabet, A-Z, and attempts to see if there is a drive located there.  
 
