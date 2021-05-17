@@ -61,7 +61,7 @@ This function attempts to clean up several files (presumably, based on function 
 
 - `c:\Users\Public\us.bat`
 - `c:\Users\Public\2008.exe`
-- `c:\Users\Public\Spoof.uxe.tmp"`
+- `c:\Users\Public\Spoof.uxe.tmp`
 - `c:\Users\Public\rdp.bat`
 
 `main_ClearUsercache_4D7640`
