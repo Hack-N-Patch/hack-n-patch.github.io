@@ -72,11 +72,11 @@ Calls `attrib +h +s Encrypt.exe`, making the `Encrypt.exe` executable labeled as
 
 Then, the function proceeds to use `net stop` to stop a variety of running services:
 
--MSSQL$SQLEXPRESS
--MSSQLSERVER
--SQLSERVERAGENT
--mysql
--plesksrv
+- MSSQL$SQLEXPRESS
+- MSSQLSERVER
+- SQLSERVERAGENT
+- mysql
+- plesksrv
 
 Nested inside this function is a call to `main_getdrives_4D7F70` that loops through the alphabet, A-Z, and attempts to see if there is a drive located there.  
 
@@ -162,6 +162,7 @@ From there the binary will rely on some standard crypto functions to prepare a k
 Before finally encrypting with `main_encrypt_4D91B0`, giving a file a new extension of `.Email=[decrypt8070@gmail.com]ID=[VVYUTQCVIAAAKVLP].Encrypt`.
 
 IOCs
+
 Type|Value
 ----|----
 MD5 | `631101614bb5dac04fed6a14470b045e`
