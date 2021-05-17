@@ -163,7 +163,7 @@ Before finally encrypting with `main_encrypt_4D91B0`, giving a file a new extens
 
 IOCs
 Type|Value
----|----
+----|----
 MD5 | `631101614bb5dac04fed6a14470b045e`
 SHA256 | `39908c43e4124d6fd3362a5cf04cfbc4ac601ee35faf84a21c7979fdf74f05a6`
 File name | `c:\Users\Public\us.bat`
