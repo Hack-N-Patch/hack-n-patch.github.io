@@ -132,24 +132,3 @@ Registry Modification | `HKCU\Software\Classes\CLSID\{fdb00e52-a214-4aa1-8fba-43
 Registry Modification | `HKCU\Software\Classes\CLSID\{fdb00e52-a214-4aa1-8fba-4357bb0072ec}\InProcServer32`
 Regsistry Modification | `HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders`
 Registry Modification |  `HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders`
-
-YARA for Initial HCrypt Crypter
-```
-rule HCrypt {
-	meta:
-		description = "Rule to detect HCrypt crypter"
-		author = "@hackpatch"
-		date = 05112021
-		url = "https://www.hacknpatch.com/2021/05/11/HCryptCryptor.html"
-
-	strings:
-		$mz = {4d 5a}
-		$str1 = "mshta" nocase ascii wide
-		$str2 = "C:\\Users\\PC 10600\\Desktop\\Projects\\Client\\Client\\obj\\Debug\\Client.pdb" nocase ascii wide
-		$str3 = "Client.exe" wide
-		$str4 = "WindowsFormsApp1" nocase ascii wide
-
-	condition:
-		$mz at 0 and 2 of ($str*)
-}
-```
