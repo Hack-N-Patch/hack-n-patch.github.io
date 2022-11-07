@@ -5,7 +5,10 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: hackpatch
-mastadon_link: https://infosec.exchange/web/@hackNpatch
+# Mastodon instances
+mastodon:
+- username: hackNpatch
+  instance: infosec.exchange
 
 # Build Settings
 markdown: kramdown
